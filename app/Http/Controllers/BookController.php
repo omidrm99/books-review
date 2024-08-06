@@ -65,8 +65,7 @@ class BookController extends Controller
             ])->withAvgRating()->withReviewsCount()->findOrFail($id)
         );
 
-        return view('books.show', ['book' =>$book]
-        );
+        return view('books.show', ['book' => $book]);
     }
 
     /**

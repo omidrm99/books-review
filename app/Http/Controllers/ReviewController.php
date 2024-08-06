@@ -33,7 +33,7 @@ class ReviewController extends Controller
             'rating' => 'required|integer|min:1|max:5',
         ]);
 
-        $book->reviews()->create([$data]);
+        $book->reviews()->create($data);
 
         return redirect()->route('books.show', 'book');
     }
