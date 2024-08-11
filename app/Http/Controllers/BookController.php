@@ -55,6 +55,7 @@ class BookController extends Controller
      */
     public function show(int $id)
     {
+
         $cacheKey = 'book:' . $id;
 
         $book = Cache()->remember(
